@@ -9,7 +9,7 @@ export const useLocalStorage = (key, initialValue) => {
     setStoredValue(value);
     window.localStorage.setItem(key, JSON.stringify(value));
   };
-  return [storedValue];
+  return [storedValue, setValue];
   {/*Check if the window.localStorage has a specific item (retrieved by key) in it
 Return that item from local storage if it exists  */}
 };
