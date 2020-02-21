@@ -10,7 +10,6 @@ import "./styles.scss";
 
 const App = () => {
   const [coinData, setCoinData] = useState([]);
-  const [name, setName] = useLocalStorage('name', 'Dustin')
 
   useEffect(() => {
     axios
